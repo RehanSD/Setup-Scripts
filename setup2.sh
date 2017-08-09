@@ -32,7 +32,7 @@ then
 fi
 echo 'Would you like to create a function to push new local branches upstream with the appropriate name automatically when called? [y]es or [n]o.'
 read addgpo
-if [[ $gpo = 'y' ]]
+if [[ $addgpo = 'y' ]]
 then
   echo 'What would you like to name the function?'
   read functionname
