@@ -13,6 +13,6 @@ curl -O https://iterm2.com/downloads/stable/iTerm2-$version.zip
 unzip iTerm2-$version.zip
 rm iTerm2-$version.zip
 # Replace with Applications once done testing!
-mv iTerm.app ~/Downloads/iTerm.app
+mv iTerm.app ~/Applications/iTerm.app
 
 echo "Download the latest JDK and then open up iTerm and run . setup2.sh. This is where the majority of the setup scripts will run"
