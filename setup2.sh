@@ -63,3 +63,5 @@ then
   read functionname
   echo "function $functionname() { git checkout -b \$1;}" >> ~/.bashrc
 fi
+source ~/.bashrc
+source ~/.bash_profile
