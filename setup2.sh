@@ -20,7 +20,7 @@ then
   echo 'What would you like to alias it to?'
   read gitcheckoutalias
   echo "alias $gitcheckoutalias=\"git checkout\"" >> ~/.bash_profile
-  echo "__git_complete $gitcheckoutalias _git_checkout"
+  echo "__git_complete $gitcheckoutalias _git_checkout" >> ~/.bashrc
 fi
 echo 'Would you like to alias git status? [y]es or [n]o.'
 read aliasgitstatus
