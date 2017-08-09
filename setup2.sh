@@ -37,7 +37,7 @@ if [[ $addgpo = 'y' ]]
 then
   echo 'What would you like to name the function?'
   read functionname
-  echo "function $functionname() { branch=\$(git rev-parse --abbrev-ref HEAD); git push --set-upstream origin \$branch;}"
+  echo "function $functionname() { branch=\$(git rev-parse --abbrev-ref HEAD); git push --set-upstream origin \$branch;}" >> ~/.bashrc
 fi
 echo 'Would you like to create a function to allow you to commit whatever follows your command call, without quotes? [y]es or [n]o.'
 read addcommit
@@ -45,7 +45,7 @@ if [[ $addcommit = 'y' ]]
 then
   echo 'What would you like to call this function?'
   read functionname
-  echo "function $functionname() { git add .; git commit -m \"\$*\";}"
+  echo "function $functionname() { git add .; git commit -m \"\$*\";}" >> ~/.bashrc
 fi
 echo 'Would you like to create a function to git clone whatever is in your clipboard? [y]es or [n]o.'
 read addgclone
@@ -61,5 +61,5 @@ if [[ $addnewbranch = 'y' ]]
 then
   echo 'What would you like to name it?'
   read functionname
-  echo "function $functionname() { git checkout -b \$1;}"
+  echo "function $functionname() { git checkout -b \$1;}" >> ~/.bashrc
 fi
