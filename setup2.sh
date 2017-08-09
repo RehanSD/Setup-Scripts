@@ -7,7 +7,7 @@ echo 'Python3 has been installed, but can not be aliased to python, since some a
 echo 'Would you like to alias Python3? [y]es or [n]o.'
 echo 'source ~/.git-completion.bash' >> ~/.bashrc
 read aliaspython
-if [$aliaspython = 'y']
+if [[ $aliaspython = 'y' ]]
 then
   echo 'What would you like to alias it to?'
   read pythonalias
@@ -15,7 +15,7 @@ then
 fi
 echo 'Would you like to alias git checkout? [y]es or [n]o.'
 read aliasgitcheckout
-if [$aliasgitcheckout = 'y']
+if [[ $aliasgitcheckout = 'y' ]]
 then
   echo 'What would you like to alias it to?'
   read gitcheckoutalias
@@ -24,7 +24,7 @@ then
 fi
 echo 'Would you like to alias git status? [y]es or [n]o.'
 read aliasgitstatus
-if [$aliasgitstatus = 'y']
+if [[ $aliasgitstatus = 'y' ]]
 then
   echo 'What would you like to alias it to?'
   read gitstatusalias
@@ -32,7 +32,7 @@ then
 fi
 echo 'Would you like to create a function to push new local branches upstream with the appropriate name automatically when called? [y]es or [n]o.'
 read addgpo
-if [$gpo = 'y']
+if [[ $gpo = 'y' ]]
 then
   echo 'What would you like to name the function?'
   read functionname
@@ -40,7 +40,7 @@ then
 fi
 echo 'Would you like to create a function to allow you to commit whatever follows your command call, without quotes? [y]es or [n]o.'
 read addcommit
-if [$addcommit = 'y']
+if [[ $addcommit = 'y' ]]
 then
   echo 'What would you like to call this function?'
   read functionname
@@ -48,7 +48,7 @@ then
 fi
 echo 'Would you like to create a function to git clone whatever is in your clipboard? [y]es or [n]o.'
 read addgclone
-if [$addgclone = 'y']
+if [[ $addgclone = 'y' ]]
 then
   echo 'What would you like to name it?'
   read functionname
@@ -56,7 +56,7 @@ then
 fi
 echo 'Would you like to add a function to create a new branch with the specified name? [y]es or [n]o.'
 read addnewbranch
-if [$addnewbranch = 'y']
+if [[ $addnewbranch = 'y' ]]
 then
   echo 'What would you like to name it?'
   read functionname
