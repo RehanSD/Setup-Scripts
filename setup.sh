@@ -1,4 +1,5 @@
 # This script will run a setup, installing your preferred version of iTerm2, the latest version of Java, and python3, aliasing it to py.
+echo "To download command line tools, you should first install Xcode."
 echo "This script will accept the xcodebuild license, and then prompt you to install command line tools from xcode."
 
 sudo xcodebuild -license accept
