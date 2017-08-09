@@ -1,6 +1,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 brew install python3
+brew install wget
 brew install git
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O ~/.git-completion.bash
 echo 'Python3 has been installed, but can not be aliased to python, since some apps expect python to be aliased to Python2.7'
