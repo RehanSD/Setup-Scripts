@@ -15,5 +15,5 @@ unzip iTerm2-$version.zip
 rm iTerm2-$version.zip
 # Replace with Applications once done testing!
 mv iTerm.app ~/Applications/iTerm.app
-
-echo "Download the latest JDK and then open up iTerm and run . setup2.sh. This is where the majority of the setup scripts will run"
+echo "iTerm will now open up. Please type sh setup2.sh to cnotinue install"
+open -a iTerm
