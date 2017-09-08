@@ -10,6 +10,7 @@ To use, just run `sh setup.sh` from your Terminal Command Line. The script will 
 * Java
 * Git
 * Git completion for bash
+
 It also guides you through aliasing the following tools:
 * Python3
 * Git commands
