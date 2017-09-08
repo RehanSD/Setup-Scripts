@@ -24,4 +24,5 @@ And create the following git-related functions:
 ## Contributions
 Setup Scripts is open source, so feel free to submit PR's to contribute!
 
-## Contact
+# Contact
+[Email me!](mailto:rdurrani@berkeley.edu)
