@@ -6,6 +6,7 @@ Setup Scripts are a repository with scripts that allow you to minimize the amoun
 ## Usage
 To use, just run `sh setup.sh` from your Terminal Command Line. The script will take care of downloading and installing iTerm, and prompt you to run the second script, `setup2.sh`, which installs the following:
 * Homebrew
+* Anaconda
 * Python3
 * Java
 * wget
