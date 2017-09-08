@@ -15,6 +15,7 @@ It also guides you through aliasing the following tools:
 * Git commands
   * checkout
   * status
+
 And create the following git-related functions:
 * Pushing new branches upstream
 * Committing all args passed
