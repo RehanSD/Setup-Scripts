@@ -1,3 +1,2 @@
-<!--Index for github project page.-->
-#Setup Scripts
+# Setup Scripts
 Helping you create the best IDE possible
