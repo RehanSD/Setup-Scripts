@@ -8,6 +8,7 @@ To use, just run `sh setup.sh` from your Terminal Command Line. The script will 
 * Homebrew
 * Python3
 * Java
+* wget
 * Git
 * Git completion for bash
 
