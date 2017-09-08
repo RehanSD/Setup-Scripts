@@ -5,6 +5,27 @@ brew install wget
 brew install git
 brew cask install java
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O ~/.git-completion.bash
+echo 'Would you like to install Anaconda (y)es or (n)o?'
+read anaconda
+if [[ $anaconda = 'y' ]]
+then
+  echo 'Which Anaconda distro do you want to install (i.e. 2 or 3)?'
+  read anaconda_distro
+  echo 'Which version would you like to install? (i.e 4.4.0, etc.)'
+  read a_version
+  echo 'Would you like to use the command line installer or graphical installer (c) or (g)'
+  read installer_kind
+  if [[ $installer_kind = 'c' ]]
+  then
+    wget https://repo.continuum.io/archive/Anaconda$anaconda_distro-$a_version-MacOSX-x86_64.sh
+    echo 'Beginning Anaconda installation'
+    bash Anaconda$anaconda_distro-$a_version-MacOSX-x86-64.sh
+  else
+    wget https://repo.continuum.io/archive/Anaconda$anaconda_distro-$a_version-MacOSX-x86_64.pkg
+    echo 'Beginning Anaconda installation - follow the steps of the wizard'
+    open Anaconda$anaconda_distro-$a_version-MacOSX-x86_64.pkg
+  fi
+fi
 echo 'Python3 has been installed, but can not be aliased to python, since some apps expect python to be aliased to Python2.7'
 echo 'Would you like to alias Python3? [y]es or [n]o.'
 echo 'source ~/.git-completion.bash' >> ~/.bashrc
