@@ -23,6 +23,7 @@ And create the following git-related functions:
 
 ## Contributions
 Setup Scripts is open source, so feel free to submit PR's to contribute!
+Also feel free to email me with any suggestions or ideas!
 
 # Contact
 [Email me!](mailto:rdurrani@berkeley.edu)
